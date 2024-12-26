@@ -152,8 +152,6 @@ abstract class BankAccount {
     protected TransactionManager getTransactionManager() {
         return transactionManager;
     }
-
-    public abstract void showMenu();
 }
 
 // SimpleBankAccount Class
@@ -164,7 +162,6 @@ class SimpleBankAccount extends BankAccount {
         super(transactionManager);
     }
 
-    @Override
     public void showMenu() {
         char choice;
         do {
